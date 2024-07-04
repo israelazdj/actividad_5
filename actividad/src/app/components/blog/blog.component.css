@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.lista_noticias{
+    flex-basis: 50%;
+    height: 200px;
+    background-color: rgb(204, 174, 174);
+}
+.formulario{
+    flex-basis: 50%;
+    background-color: rgb(154, 211, 238);
+}
