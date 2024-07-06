@@ -25,8 +25,15 @@ export class BlogComponent {
   }
 
   guardarnoticia(){
+    if(this.newNoticia.titulo!== "" && this.newNoticia.imagen!== "" && this.newNoticia.texto!== "" && this.newNoticia.fecha!== "")
+    {      
     this.noticias.push(this.newNoticia)
     this.newNoticia = {titulo: "",imagen:"",texto:"",fecha:""}
+    }
+    else{
+      alert("Los campos no deben estar vacios")
+    }
+    
   }
 
 
