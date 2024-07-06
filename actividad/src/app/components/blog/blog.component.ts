@@ -22,7 +22,9 @@ export class BlogComponent {
     this.noticias.forEach((noticia:Inoticias)=>{
       html += `<article class="noticia">
                 <h3>${noticia.titulo}</h3>
-                <p> ${noticia.imagen}</p>
+                <figure class="figure">
+                  <img class="image" src="${noticia.imagen}" alt="">
+                </figure>                
                 <p>${noticia.texto}</p>
                 <p>${noticia.fecha}</p>
               </article>`
