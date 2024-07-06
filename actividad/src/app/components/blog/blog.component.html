@@ -5,5 +5,45 @@
       <ul class="ul" [innerHTML]="cargandonoticias()"></ul>
     </div>
   </section>
-  <section class="formulario">formulario</section>
+  <section class="formulario">
+    <div class="form">
+      <div>
+        <label for="titulo">titulo de la noticia</label>
+        <input
+          id="titulo"
+          type="text"
+          placeholder="introduzca el titulo"
+          [(ngModel)]="newNoticia.titulo"
+        />
+      </div>
+      <div>
+        <label for="imagen">Imagen de la noticia:</label>
+        <input
+          id="imagen"
+          type="text"
+          placeholdrr="introduce el titulo"
+          [(ngModel)]="newNoticia.imagen"
+        />
+      </div>
+      <div>
+        <label for="texto">Texto de la noticia:</label>
+        <input
+          id="texto"
+          type="text"
+          placeholdrr="introduce el titulo"
+          [(ngModel)]="newNoticia.texto"
+        />
+      </div>
+      <div>
+        <label for="fecha">Fecha de la noticia:</label>
+        <input
+          id="fecha"
+          type="text"
+          placeholdrr="introduce el titulo"
+          [(ngModel)]="newNoticia.fecha"
+        />
+      </div>
+    </div>
+    <button (click)="guardarnoticia()">Guardar</button>
+  </section>
 </div>

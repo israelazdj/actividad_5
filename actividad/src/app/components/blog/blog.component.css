@@ -11,11 +11,11 @@
 }
 .lista_noticias{
     flex-basis: 50%;
-    background-color: rgb(204, 174, 174);
+    background-color: hwb(33 47% 5% / 0.568);
     
 }
 .formulario{
-    background-color: aquamarine;
+    background-color: rgb(211, 188, 163);
     flex-basis: 50%;
 }
 .ul{

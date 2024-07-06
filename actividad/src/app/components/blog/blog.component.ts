@@ -1,21 +1,34 @@
 import { Component, Input } from '@angular/core';
 import { Inoticias } from '../../interfaces/inoticias.interface';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-blog',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './blog.component.html',
   styleUrl: './blog.component.css'
 })
 export class BlogComponent {
   @Input() noticias:Inoticias[]=[]
-  
+
+  newNoticia:Inoticias ={
+    titulo: "",
+    imagen:"",
+    texto:"",
+    fecha:""
+  }
 
 
   constructor(){
     this.cargandonoticias()
   }
+
+  guardarnoticia(){
+    this.noticias.push(this.newNoticia)
+    this.newNoticia = {titulo: "",imagen:"",texto:"",fecha:""}
+  }
+
 
   cargandonoticias(){
     let html = ""
