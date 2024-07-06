@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { BlogComponent } from './components/blog/blog.component';
+import { Inoticias } from './interfaces/inoticias.interface';
 
 @Component({
   selector: 'app-root',
@@ -10,5 +11,15 @@ import { BlogComponent } from './components/blog/blog.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'actividad';
+  
+  arraynoticias: Inoticias[]=[
+    {titulo:'accidente', 
+      imagen:'https://www.derco.cl/comunicaciones/accidente-de-transito',
+      texto:'El club está de acuerdo en aceptar el denominado como "Stadium Agreemen" si la FIFA soluciona lo que piden otros cuatro clubes',
+      fecha:'28-06-2024'},
+        {titulo:'accidente',
+         imagen:'https://www.derco.cl/comunicaciones/accidente-de-transito',
+         texto:'El club está de acuerdo en aceptar el denominado como "Stadium Agreemen" si la FIFA soluciona lo que piden otros cuatro clubes',
+         fecha:'28-06-2024'}
+  ];
 }

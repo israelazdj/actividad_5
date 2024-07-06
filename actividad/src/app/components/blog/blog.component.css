@@ -1,15 +1,20 @@
 .container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 20px;
+    
 }
-
+@media(min-width:680px){
+    .container{
+        flex-direction: row;
+    }       
+}
 .lista_noticias{
     flex-basis: 50%;
-    height: 200px;
     background-color: rgb(204, 174, 174);
+    
 }
 .formulario{
+    background-color: aquamarine;
     flex-basis: 50%;
-    background-color: rgb(154, 211, 238);
 }
