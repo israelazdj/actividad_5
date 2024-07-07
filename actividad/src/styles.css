@@ -1,9 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --blanco: #fffffff1;
+    --oscuro: #212121;
+    --primario: #ac8f37be;
+    --secundario:#0097A7;
+    --gris:hsla(0, 0%, 31%, 0.651);
+    --gris-claro:rgba(182, 182, 123, 0.589);
+}
 .figure{
-    width: 500px;
+    margin-top: 0.7rem;
 }
 .image{
+    margin: 0 auto;
+    padding: 0 auto;
     width: 100%;
-    height: auto;
-    display: block;
+}
+.noticia{
+    margin-bottom: 3rem;
+    border-radius: 6px;
+    padding: 15px;
+    border: none;
+    background-color: var(--blanco);
 }

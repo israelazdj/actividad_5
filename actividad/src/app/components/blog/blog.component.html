@@ -1,49 +1,51 @@
 <div class="container">
   <section class="lista_noticias">
     <div>
-      <h2>lista noticias</h2>
+      <h2>Lista Noticias</h2>
       <ul class="ul" [innerHTML]="cargandonoticias()"></ul>
     </div>
   </section>
   <section class="formulario">
-    <div class="form">
-      <div>
-        <label for="titulo">titulo de la noticia</label>
-        <input
-          id="titulo"
-          type="text"
-          placeholder="introduzca el titulo"
-          [(ngModel)]="newNoticia.titulo"
-        />
+    <div class="cont-form">
+      <div class="form">
+        <div>
+          <label for="titulo">Titulo de la noticia</label>
+          <input
+            id="titulo"
+            type="text"
+            placeholder="Titulo de la noticia"
+            [(ngModel)]="newNoticia.titulo"
+          />
+        </div>
+        <div>
+          <label for="imagen">URL de la noticia:</label>
+          <input
+            id="imagen"
+            type="text"
+            placeholder="https://imagen.es"
+            [(ngModel)]="newNoticia.imagen"
+          />
+        </div>
+        <div>
+          <label for="texto">Texto de la noticia:</label>
+          <input
+            id="texto"
+            type="text"
+            placeholder="Descripcion de la noticia"
+            [(ngModel)]="newNoticia.texto"
+          />
+        </div>
+        <div>
+          <label for="fecha">Fecha de la noticia:</label>
+          <input
+            id="fecha"
+            type="text"
+            placeholder="00-00-0000"
+            [(ngModel)]="newNoticia.fecha"
+          />
+        </div>
       </div>
-      <div>
-        <label for="imagen">Imagen de la noticia:</label>
-        <input
-          id="imagen"
-          type="text"
-          placeholdrr="introduce el titulo"
-          [(ngModel)]="newNoticia.imagen"
-        />
-      </div>
-      <div>
-        <label for="texto">Texto de la noticia:</label>
-        <input
-          id="texto"
-          type="text"
-          placeholdrr="introduce el titulo"
-          [(ngModel)]="newNoticia.texto"
-        />
-      </div>
-      <div>
-        <label for="fecha">Fecha de la noticia:</label>
-        <input
-          id="fecha"
-          type="text"
-          placeholdrr="introduce el titulo"
-          [(ngModel)]="newNoticia.fecha"
-        />
-      </div>
+      <button class="boton" (click)="guardarnoticia()">Guardar</button>
     </div>
-    <button (click)="guardarnoticia()">Guardar</button>
   </section>
 </div>

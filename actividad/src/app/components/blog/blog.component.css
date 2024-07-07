@@ -1,23 +1,76 @@
 .container{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    
+    gap: 20px;    
 }
-@media(min-width:680px){
-    .container{
-        flex-direction: row;
-    }       
-}
+
 .lista_noticias{
+    padding: 30px;
     flex-basis: 50%;
-    background-color: hwb(33 47% 5% / 0.568);
-    
+    margin-bottom: 10px;
+    background-image:linear-gradient(to top, var(--gris-claro) 30%, var(--blanco)100%);
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 20px 0px rgba(107,107,107,1);
+    -moz-box-shadow: 3px 3px 20px 0px rgba(107,107,107,1);
+    box-shadow: 3px 3px 20px 0px rgba(107,107,107,1);
 }
 .formulario{
-    background-color: rgb(211, 188, 163);
-    flex-basis: 50%;
+    padding: 30px;
+    border-radius: 10px;
+    background-image:linear-gradient(to top, var(--gris-claro) 20%, var(--blanco)100%);
+    flex-grow: 1;
+    height: auto;
+    -webkit-box-shadow: 3px 3px 20px 0px rgba(107,107,107,1);
+    -moz-box-shadow: 3px 3px 20px 0px rgba(107,107,107,1);
+    box-shadow: 3px 3px 20px 0px rgba(107,107,107,1);
 }
+@media(min-width:700px){
+    .container{
+        flex-direction: row;
+    } 
+} 
 .ul{
     margin-top: 30px;
+}
+.cont-form{
+    border:none;
+    padding: 1rem;
+    width: 40%;
+    border-radius: 6px;
+    background-color: var(--gris-claro);
+    text-transform:capitalize;
+    -webkit-box-shadow: 3px 3px 20px 0px rgba(107,107,107,1);
+    -moz-box-shadow: 3px 3px 20px 0px rgba(107,107,107,1);
+    box-shadow: 3px 3px 20px 0px rgba(107,107,107,1);
+}
+.boton{
+    background-color: var(--secundario);
+    color:var(--blanco);
+    display: inline-block;
+    padding: 1rem 1rem; 
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 6px;
+    text-transform: capitalize;
+    font-weight: bold;
+    width: 50%;
+    border: none;
+}
+@media(min-width:700px)
+{
+    .boton{
+        width: auto;
+    }
+}
+.boton:hover{
+    cursor:pointer;
+}
+h2{
+    text-transform: capitalize;
+}
+input{
+    border-radius: 1em;
+    border: none;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
 }
